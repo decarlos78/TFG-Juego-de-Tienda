@@ -7,6 +7,8 @@ public class PC : MonoBehaviour
     [SerializeField] private BoxCollider Collider_Interactuable;
 
     public float Cost;
+
+    [SerializeField] private PC_Items PC_Items_ScriptableObject;
     void Start()
     {
 
@@ -14,7 +16,7 @@ public class PC : MonoBehaviour
 
     void Update()
     {
-        
+       
     }
 
     void OnDrawGizmos()

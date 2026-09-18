@@ -152,6 +152,7 @@ RectTransform:
   m_Children:
   - {fileID: 1171335731}
   - {fileID: 2002510738}
+  - {fileID: 454244985}
   m_Father: {fileID: 310666738}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -325,6 +326,7 @@ RectTransform:
   m_Children:
   - {fileID: 2028729661}
   - {fileID: 162526902}
+  - {fileID: 298244034}
   m_Father: {fileID: 310666738}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -494,13 +496,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 298244033}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.49989, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 947241301}
-  m_Father: {fileID: 310666738}
+  m_Father: {fileID: 163702956}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -631,9 +633,6 @@ RectTransform:
   m_Children:
   - {fileID: 1353839674}
   - {fileID: 1771099454}
-  - {fileID: 1953911760}
-  - {fileID: 298244034}
-  - {fileID: 454244985}
   - {fileID: 1230363046}
   - {fileID: 163702956}
   - {fileID: 138234407}
@@ -925,13 +924,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454244984}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.49989, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 996904902}
-  m_Father: {fileID: 310666738}
+  m_Father: {fileID: 138234407}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1908,6 +1907,7 @@ RectTransform:
   m_Children:
   - {fileID: 1832712126}
   - {fileID: 184689010}
+  - {fileID: 1953911760}
   m_Father: {fileID: 310666738}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2250,7 +2250,7 @@ MonoBehaviour:
   StopMoveMargin: 0.25
   JumpForce: 5
   MoneyText: {fileID: 1325361015}
-  Cash: 20
+  Cash: 100
   PC_Interface: {fileID: 310666737}
 --- !u!54 &1402654037
 Rigidbody:
@@ -2955,13 +2955,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1953911759}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.49989, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1991534492}
-  m_Father: {fileID: 310666738}
+  m_Father: {fileID: 1230363046}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3183,6 +3183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Collider_Interactuable: {fileID: 1588501470}
   Cost: 5
+  PC_Items_ScriptableObject: {fileID: 0}
 --- !u!1 &1991534491
 GameObject:
   m_ObjectHideFlags: 0

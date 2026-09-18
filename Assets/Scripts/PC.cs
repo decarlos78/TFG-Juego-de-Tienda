@@ -8,15 +8,18 @@ public class PC : MonoBehaviour
 
     public float Cost;
 
-    [SerializeField] private PC_Items PC_Items_ScriptableObject;
+
+    public List<PC_Items> PC_Items; 
+
+
     void Start()
     {
-
+        PC_Items = new List<PC_Items>();
     }
 
     void Update()
     {
-       
+        
     }
 
     void OnDrawGizmos()

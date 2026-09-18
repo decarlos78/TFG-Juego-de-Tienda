@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -17,6 +19,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float JumpForce = 6f;
 
 
+    [SerializeField] private TextMeshProUGUI MoneyText;
+    public float Cash;
+
+    [SerializeField] private GameObject PC_Interface;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>(); 
@@ -24,10 +31,12 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        
+        MoneyText.text = "Dinero: " + Cash + "$";
     }
     void Update()
     {
+        MoneyText.text = "Dinero: " + Cash + "$";
+
         Inputs();
         if (KeyReleased) StopMoveCounter += Time.deltaTime;
         if (StopMoveCounter >= StopMoveMargin)
@@ -86,9 +95,23 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y + JumpForce, rb.velocity.z);
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape)) //desactivar interfaz y cerrar menús
+        {
+            PC_Interface.SetActive(false);
+        }
     }
     private void Movement()
     {
         
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.layer != 6) return;
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            PC_Interface.SetActive(true);
+        }
     }
 }
